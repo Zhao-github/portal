@@ -128,7 +128,7 @@ import TabItem from '@theme/TabItem';
 
 	```golang
 	函数签名: 
-		Take funcTake(key string, fetch func() (interface{}, error)) (interface{}, error)
+		Take func(key string, fetch func() (interface{}, error)) (interface{}, error)
 	说明: 
 		获取缓存，如果缓存中存在，则返回缓存中的值，如果缓存不存在，则执行 fetch 函数的返回结果。
 	入参:
